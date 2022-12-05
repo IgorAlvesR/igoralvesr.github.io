@@ -1,0 +1,89 @@
+.experencies {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px 40px;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.experencies h1 {
+  font-size: 7rem;
+  word-break: break-all;
+  opacity: 0.1;
+  max-width: 4ch;
+}
+
+.content-experiences {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background: rgb(245, 245, 245);
+  padding: 20px;
+  margin-bottom: 10px;
+  gap: 20px;
+  position: relative;
+  color: #525252;
+}
+
+.content-experiences::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#3760F5, #2B48CC);
+  position: absolute;
+  top: 20px;
+  left: -2px;
+}
+
+.content-experiences .year {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+}
+
+.content-experiences h2 {
+  margin-bottom: 15px;
+  font-size: 1.125rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skills span {
+  background: #fff;
+  padding: 5px 10px;
+}
+
+@media (max-width: 1024px) {
+  .experencies {
+    grid-template-columns: 1fr; 
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .experencies h1 {
+    font-size: 2rem;
+    word-break: inherit;
+    opacity: inherit;
+    max-width: inherit;
+  }
+
+  .content-experiences h2 {
+    margin-top: 10px;
+  }
+
+  .content-experiences .year {
+    position: inherit;
+  }
+}
+
+@media (max-width: 580px) {
+  .content-experiences {
+    grid-template-columns: 1fr;
+  }
+}

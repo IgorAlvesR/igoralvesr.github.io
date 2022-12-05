@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+nav h1 {
+  font-size: 3rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;
+  gap: 24px;
+}
+
+.menu a {
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: .2s;
+}
+
+.menu a:hover {
+  background: rgb(235, 235, 235);
+}
