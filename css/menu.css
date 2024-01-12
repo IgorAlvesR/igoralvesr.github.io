@@ -2,6 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
+  color: #353535;
 }
 
 nav h1 {
@@ -10,8 +11,8 @@ nav h1 {
 
 .menu {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 24px;
 }
@@ -19,7 +20,7 @@ nav h1 {
 .menu a {
   padding: 10px 20px;
   border-radius: 4px;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .menu a:hover {

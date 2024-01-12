@@ -18,7 +18,7 @@
 
 .content-experiences {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   background: rgb(245, 245, 245);
   padding: 20px;
   margin-bottom: 10px;
@@ -28,10 +28,10 @@
 }
 
 .content-experiences::before {
-  content: '';
+  content: "";
   width: 4px;
   height: 20px;
-  background: linear-gradient(#3760F5, #2B48CC);
+  background: linear-gradient(#ffe400, #bfab02);
   position: absolute;
   top: 20px;
   left: -2px;
@@ -61,7 +61,7 @@
 
 @media (max-width: 1024px) {
   .experencies {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     justify-items: center;
     gap: 20px;
   }

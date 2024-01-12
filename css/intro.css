@@ -1,4 +1,3 @@
-
 .intro {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -14,23 +13,45 @@
   font-size: 4.5rem;
   position: relative;
   margin-bottom: 30px;
+  color: #353535;
 }
 
 .intro h1::before {
-  content: '';
+  content: "";
   display: block;
   width: 130px;
   height: 100px;
-  background: url('../images/detalhe.svg') no-repeat center;
+  background: url("../images/detalhe.svg") no-repeat center;
   position: absolute;
   top: 0;
   left: -35px;
   z-index: -1;
 }
 
+.description-dev {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.whatsapp-contact {
+  text-align: center;
+  padding: 15px 45px;
+  background-color: #353535;
+  font-weight: bold;
+  font-size: 14pt;
+  color: white;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+
+.whatsapp-contact:hover {
+  background-color: #525252;
+}
+
 @media (max-width: 1024px) {
   .intro h1 {
-    font-size: 3rem
+    font-size: 3rem;
   }
   .intro h1::before {
     width: 30px;
@@ -42,7 +63,7 @@
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     gap: 30px;
   }
 
@@ -52,7 +73,7 @@
   }
 
   .intro h1 {
-    font-size: 2rem 
+    font-size: 2rem;
   }
 
   .intro h1::before {
